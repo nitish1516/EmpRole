@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/llFirstScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageViewAvatar"
+                android:layout_alignTop="@+id/imageViewAvatar"
+                android:layout_marginLeft="30dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingLeft="40dp">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewEmpName"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+
+                    android:textColor="@android:color/black"
+                    tools:text="MindOrks" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewEmpAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@android:color/black"
+                    tools:text="MindOrks" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageViewAvatar"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+
+                android:scaleType="fitXY"
+               />
+        </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
